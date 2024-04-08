@@ -1,0 +1,15 @@
+.normal-button {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  border: none;
+  padding: 15px 18px;
+  border-radius: 7px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+      
+.is-toggled {
+  background-color: rgb(230, 230, 230);
+  color: black;
+}

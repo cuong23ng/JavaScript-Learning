@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6fghi Exercise</title>
+  </head>
+  <body>
+    <button onclick="
+      playGame('heads');
+    ">heads</button>
+    <button onclick="
+      playGame('tails');
+    ">tails</button>
+    <script>
+      let score =  JSON.parse(localStorage.getItem('flip-game-score'));
+      if (!score) {
+        score = {
+          wins: 0,
+          losses: 0
+        }
+      }
+      
+      function playGame(guess) {
+        let num = Math.random();
+        let result;
+
+        num < 0.5 ? result = 'heads' : result = 'tails';
+        if (guess === result) {
+          console.log('You win!');
+          score.wins++;
+        } else {
+          console.log('You lose!');
+          score.losses++;
+        }
+
+        console.log(score);
+
+        localStorage.setItem('flip-game-score', JSON.stringify(score));
+      }
+    </script>
+  </body>
+</html>

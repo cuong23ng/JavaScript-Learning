@@ -1,0 +1,59 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+
+.result-bar {
+  font-size: 50px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+button {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  font-size: 26px;
+  border: none;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 35px;
+}
+
+.num-button {
+  padding: 12px 21px;
+  
+}
+
+.plus-button,
+.minus-button,
+.multiply-button,
+.divide-button {
+  background-color: orange;
+}
+
+.plus-button {
+  padding: 12px 20px;
+}
+
+.multiply-button {
+  padding: 12px 23px;
+}
+
+.minus-button{
+  padding: 12px 24px;
+}
+
+.equal-button {
+  padding: 12px 21px;
+}
+
+.dot-button,
+.divide-button {
+  padding: 12px 25px;
+}
+
+.clear-button {
+  font-size: 17px;
+  padding: 18px 8px;
+}

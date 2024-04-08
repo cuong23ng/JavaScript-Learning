@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input onkeyup="
+      updateResult();
+    " type="text" placeholder="name">
+    <button onclick="
+      updateResult();
+    ">Submit</button>
+    <p></p>
+    <script>
+      function updateResult() {
+        const inputElement = document.querySelector('input');
+        document.querySelector('p').innerHTML = `Your name is: ${inputElement.value}`;
+      }
+    </script>
+  </body>
+</html>

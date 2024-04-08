@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick="
+      updateResult('heads');
+    ">heads</button>
+    <button onclick="
+      updateResult('tails');
+    ">tails</button>
+    <p></p>
+
+    <script>
+      function updateResult(chosen) {
+        document.querySelector('p').innerHTML = `You chose: ${chosen}`;
+      }
+    </script>
+  </body>
+</html>
